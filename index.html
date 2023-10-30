@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <section id="carrinho"
+        class="fixed top-0 right-[-360px] bg-violet-800 h-screen w-[360px] text-slate-200 z-50 duration-200 border-l border-slate-200 p-5 hover flex flex-col justify-between">
+
+        <div id="cabecalho-carinho" class="flex justify-between m-4">
+            <p>Meu carrinho</p>
+            <button id="fechar-carrinho">
+                <i class="fa-solid fa-circle-xmark"></i></button>
+        </div>
+
+        <section id="produto-carrinho" class="h-3/6 overflow-y-auto flex flex-col gap-2">
+
+        
+        </section>
+
+        <p id="preco-total" class="bg-slate-200 text-green-800 rounded-sm pl-5">Total: $200</p>
+
+        <button class="flex bg-slate-200 text-slate-900 p2 rounded-sm pl-5">Finalizar Compra</button>
+
+    </section>
+    <header class="flex bg-violet-800 p-2 justify-between mx-3">
+        <img class="h-16" src="./assets/logo/hashtag.svg" alt="Logo Magazine Hashtag" />
+        <div class="text-slate-200 flex gap-2 items-end flex flex-center">
+            <button><i class="fa-solid fa-user"></i></button>
+            <button id="abrir-carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+
+        </div>
+
+    </header>
+    <main>
+        <section id="container-produto" class="flex flex-wrap"></section>
+    </main>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
