@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
@@ -21,15 +21,12 @@
             <button id="fechar-carrinho">
                 <i class="fa-solid fa-circle-xmark"></i></button>
         </div>
-
-        <section id="produto-carrinho" class="h-3/6 overflow-y-auto flex flex-col gap-2">
-
-        
+        <section id="produto-carrinho" class="h-3/5 overflow-y-auto flex flex-col gap-2">
         </section>
-
         <p id="preco-total" class="bg-slate-200 text-green-800 rounded-sm pl-5">Total: $200</p>
-
-        <button class="flex bg-slate-200 text-slate-900 p2 rounded-sm pl-5">Finalizar Compra</button>
+        <button
+            class="flex bg-slate-200 text-slate-900 p2 rounded-sm pl-5 hover:text-slate-200 hover:bg-slate-900">Finalizar
+            Compra</button>
 
     </section>
     <header class="flex bg-violet-800 p-2 justify-between mx-3">
@@ -41,7 +38,25 @@
         </div>
 
     </header>
-    <main>
+    <main class="flex flex-col items-center">
+        <section id="filtros" class="p-10 flex">
+            <div class=px-2>
+                <input id="exibir-todos" type="radio" name="filtro" class="peer hidden" checked />
+                <label for="exibir-todos"
+                    class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold px-2 rounded select-none cursor-pointer">Todos</label>
+            </div>
+            <div class=px-2>
+                <input id="exibir-masculinos" type="radio" name="filtro" class="peer hidden" />
+                <label for="exibir-masculinos"
+                    class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold px-2 rounded select-none cursor-pointer">Masculinos</label>
+            </div>
+            <div class=px-2>
+                <input id="exibir-femininos" type="radio" name="filtro" class="peer hidden" />
+                <label for="exibir-femininos"
+                    class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold px-2 rounded select-none cursor-pointer">Femininos</label>
+            </div>
+
+        </section>
         <section id="container-produto" class="flex flex-wrap"></section>
     </main>
     <script type="module" src="./main.js"></script>
