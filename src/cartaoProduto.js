@@ -1,5 +1,5 @@
-import { catalogo } from "./utilidades";
-import { adicionarAoCarrinho } from "./menuCarrinho";
+import { catalogo } from "./utilidades.js";
+import { adicionarAoCarrinho } from "./menuCarrinho.js";
 
 
 
