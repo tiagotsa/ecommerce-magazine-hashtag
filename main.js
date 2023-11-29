@@ -1,10 +1,10 @@
-import { renderizarCatalogo } from "./src/cartaoProduto";
-import { inicializarFiltros } from "./src/filtrosCatalogo";
+import { renderizarCatalogo } from "./src/cartaoProduto.js";
+import { inicializarFiltros } from "./src/filtrosCatalogo.js";
 import {
     atualizarPrecoCarrinho,
     inicializarCarrinho,
     renderizarProdutoCarrinho,
-} from "./src/menuCarrinho";
+} from "./src/menuCarrinho.js";
 
 renderizarCatalogo();
 inicializarCarrinho();
@@ -12,4 +12,3 @@ atualizarPrecoCarrinho();
 renderizarProdutoCarrinho();
 inicializarFiltros();
 inicializarFiltros
-
