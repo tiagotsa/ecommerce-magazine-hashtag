@@ -15,7 +15,7 @@ function esconderMasculinos() {
     const produtosMasculinos = Array.from(
         catalogoProdutos.getElementsByClassName("masculino")
     );
-
+    
     for (const produto of produtosMasculinos) {
         produto.classList.add("hidden");
     }

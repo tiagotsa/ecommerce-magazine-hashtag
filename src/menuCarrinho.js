@@ -1,4 +1,4 @@
-import { catalogo, lerLocalStorage, salvarLocalStorage } from "./utilidades.js";
+import { catalogo, lerLocalStorage, salvarLocalStorage } from "./utilidades";
 
 const idsProdutoCarrinhoComQuantidade = lerLocalStorage("carrinho") ?? {};
 
@@ -13,7 +13,7 @@ function fecharCarrinho() {
 }
 
 function irParaCheckout() {
-    if(Object.keys(idsProdutoCarrinhoComQuantidade).length === 0) {
+    if (Object.keys(idsProdutoCarrinhoComQuantidade).length === 0) {
         return;
     }
     window.location.href = window.location.origin + "/checkout.html";
@@ -28,7 +28,7 @@ export function inicializarCarrinho() {
     botaoFecharCarrinho.addEventListener("click", fecharCarrinho);
     botaoAbrirCarrinho.addEventListener("click", abrirCarrinho);
     botaoIrParaCheckout.addEventListener("click", irParaCheckout);
-    
+
 }
 
 function desenharProdutoNoCarrinho(idProduto) {
