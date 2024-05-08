@@ -1,6 +1,7 @@
 {
     "rewrites": [
       { "source": "/", "destination": "/" },
-      { "source": "/pedidos.html", "destination": "/pedidos.html" }
+      { "source": "/pedidos.html", "destination": "/pedidos.html" },
+      { "source": "/checkout.html", "destination": "/checkout.html" }
     ]
   }
